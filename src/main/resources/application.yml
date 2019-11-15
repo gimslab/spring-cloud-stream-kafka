@@ -2,8 +2,8 @@ spring.cloud.stream:
     kafka.binder.brokers: localhost:9092
     bindings:
         greetings-in:
-            destination: spring.cloud.stream.greetings
+            destination: spring.cloud.stream.greetings.in
             contentType: application/json
         greetings-out:
-            destination: spring.cloud.stream.greetings
+            destination: spring.cloud.stream.greetings.out
             contentType: application/json

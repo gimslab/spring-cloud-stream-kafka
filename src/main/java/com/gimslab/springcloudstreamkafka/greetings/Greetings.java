@@ -12,4 +12,11 @@ import lombok.ToString;
 public class Greetings {
 	private long timestamp;
 	private String message;
+
+	public Greetings addPerson(String person) {
+		return Greetings.builder()
+				.timestamp(timestamp)
+				.message(message + " " + person + " !!")
+				.build();
+	}
 }
